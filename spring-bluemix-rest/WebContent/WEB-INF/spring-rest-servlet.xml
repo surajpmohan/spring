@@ -13,11 +13,13 @@
 	<mvc:annotation-driven>	</mvc:annotation-driven>
 	<!-- <jee:jndi-lookup id="dataSource" jndi-name="jdbc/sqldb"
             expected-type="javax.sql.DataSource" /> -->
-    <bean id="DataSource"
-    class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-    <property name="driverClassName" value="com.ibm.db2.jcc.DB2Driver" />
-    <property name="url" value="http://localhost:50000" />
-    <property name="username" value="db2admin" /> 
-    <property name="password" value="Bharani1982" />
-	</bean>
+	<bean id="DataSource" 
+    class="com.ibm.db2.jcc.DB2DataSource">
+        <property name="serverName" value="localhost" />
+        <property name="portNumber" value="50000"/>
+        <property name="databaseName" value="RRTEST"/>
+        <property name="driverType" value="4"/>
+        <property name="user" value="db2admin"/>
+        <property name="password" value="Bharani1982"/>
+ 	</bean>
 </beans>
