@@ -13,13 +13,4 @@
 	<mvc:annotation-driven>	</mvc:annotation-driven>
 	<!-- <jee:jndi-lookup id="dataSource" jndi-name="jdbc/sqldb"
             expected-type="javax.sql.DataSource" /> -->
-	<bean id="DataSource" 
-    class="com.ibm.db2.jcc.DB2DataSource">
-        <property name="serverName" value="localhost" />
-        <property name="portNumber" value="50000"/>
-        <property name="databaseName" value="RRTEST"/>
-        <property name="driverType" value="4"/>
-        <property name="user" value="db2admin"/>
-        <property name="password" value="Bharani1982"/>
- 	</bean>
 </beans>
