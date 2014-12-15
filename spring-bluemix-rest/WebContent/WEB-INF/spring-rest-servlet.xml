@@ -11,6 +11,6 @@
 
 	<context:component-scan base-package="spm.spring.rest"></context:component-scan>
 	<mvc:annotation-driven>	</mvc:annotation-driven>
-	<!-- <jee:jndi-lookup id="dataSource" jndi-name="jdbc/sqldb"
-            expected-type="javax.sql.DataSource" /> -->
+	<jee:jndi-lookup id="dataSource" jndi-name="jdbc/sqldb"
+            expected-type="javax.sql.DataSource" />
 </beans>
